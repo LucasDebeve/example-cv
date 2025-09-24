@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carte TCG Pokémon - Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-wrapper" role="img" aria-label="Carte Pokémon prototype">
+    <div id="top-left">
+        BASE
+    </div>
+    <div class="topbar">
+      <div class="pokemon-name">Pikachu</div>
+      <div class="meta-right">
+        <div class="hp"><span>PV</span>60</div>
+        <div class="type">
+            <img src="https://static.wikia.nocookie.net/pokemon-academy-life-forever/images/0/00/Electric-logo.png/revision/latest/thumbnail/width/360/height/360?cb=20230404165753" alt="electrique">
+        </div>
+      </div>
+    </div>
+
+    <div class="art">
+        <img src="https://i.pinimg.com/1200x/13/35/9b/13359bb6a2e6fe376ad221d7d57e5191.jpg" alt="Pikachu">
+    </div>
+
+    <div class="body">
+        <div class="attack">
+            <div class="attack-header">
+                <div class="energy-cost">
+                    <div class="energy" title="Electrique">
+                        <img src="https://static.wikia.nocookie.net/pokemon-academy-life-forever/images/0/00/Electric-logo.png/revision/latest/thumbnail/width/360/height/360?cb=20230404165753" alt="electrique">
+                    </div>
+                </div>
+                <div class="attack-info">
+                    <div class="attack-name">Chargeur</div>
+                </div>
+            </div>
+            <div class="attack-effect">Cherchez dans votre deck une carte Energie de base puis attachez-la à ce Pokémon. Mélangez ensuite votre deck.</div>
+        </div>
+
+        <div class="attack">
+            <div class="attack-header">
+                <div class="energy-cost">
+                    <div class="energy" title="Electrique">
+                        <img src="https://static.wikia.nocookie.net/pokemon-academy-life-forever/images/0/00/Electric-logo.png/revision/latest/thumbnail/width/360/height/360?cb=20230404165753" alt="electrique">
+                    </div>
+                    <div class="energy" title="Electrique">
+                        <img src="https://static.wikia.nocookie.net/pokemon-academy-life-forever/images/0/00/Electric-logo.png/revision/latest/thumbnail/width/360/height/360?cb=20230404165753" alt="electrique">
+                    </div>
+                </div>
+                <div class="attack-info">
+                    <div class="attack-name">Pika-Poing</div>
+                </div>
+                <div class="attack-damage">50</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="stats">
+            <div class="stat-item">
+                Faiblesse
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77bf3ba9-0aac-4452-be82-de536b5aab32/dezrx1z-f8ecfab3-6ba7-47a2-90b3-2e95bdcf0bfe.png/v1/fill/w_1280,h_1278/fighting_energy_card_vector_symbol_by_biochao_dezrx1z-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3OCIsInBhdGgiOiIvZi83N2JmM2JhOS0wYWFjLTQ0NTItYmU4Mi1kZTUzNmI1YWFiMzIvZGV6cngxei1mOGVjZmFiMy02YmE3LTQ3YTItOTBiMy0yZTk1YmRjZjBiZmUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.HeOZJ5l5itk37i5IA-1bviqDgi5Nc5feCRrKC8_EVGw" alt="faiblesse">
+                <span>×2</span>
+            </div>
+            <div class="stat-item">
+                Résistance
+            </div>
+            <div class="stat-item" id="retraite">
+                Retraite
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aba1a756-d955-43f6-a2e9-5b7d60406854/d50w4gu-bcf44127-7bc3-468d-b148-1af8cf4e7ac0.png/v1/fill/w_720,h_720/colorless_energy_by_humac1_d50w4gu-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mL2FiYTFhNzU2LWQ5NTUtNDNmNi1hMmU5LTViN2Q2MDQwNjg1NC9kNTB3NGd1LWJjZjQ0MTI3LTdiYzMtNDY4ZC1iMTQ4LTFhZjhjZjRlN2FjMC5wbmciLCJ3aWR0aCI6Ijw9NzIwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.TRBYO_JRGEr0wXeXThFHbgwSEpDKDcvMjr0oQCAoTCI" alt="retraite">
+            </div>
+        </div>
+    </div>
+
+    <div class="small-print">
+        <div>Illustration: A. Auteur</div>
+        <div>025/165</div>
+    </div>
+  </div>
+</body>
+</html>
